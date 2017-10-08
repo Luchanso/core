@@ -3418,6 +3418,7 @@ Please keep request rate to approximately 3/s.
             })
             .limit(100)
             .asCallback((err, result) => {
+              console.log(err);
               if (err) {
                 return cb(err);
               }
